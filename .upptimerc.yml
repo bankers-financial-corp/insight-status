@@ -22,5 +22,4 @@ status-website:
   introMessage: Current and historical availability of INSIGHT core services. This page is hosted independently of the INSIGHT platform.
   # Custom domain: partner agencies that allowlist only *.opsginsight.com can
   # reach it. Requires the DNS CNAME in the operator steps.
-  # cname: status.opsginsight.com   # enable once the DNS CNAME exists
-  baseUrl: /insight-status
+  cname: status.opsginsight.com
