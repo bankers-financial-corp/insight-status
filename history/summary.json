@@ -1,6 +1,6 @@
 [
   {
-    "name": "INSIGHT web application",
+    "name": "Web application",
     "url": "https://app.opsginsight.com/healthz",
     "icon": "https://icons.duckduckgo.com/ip3/app.opsginsight.com.ico",
     "slug": "insight-web-application",
@@ -10,15 +10,15 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 200,
-    "timeDay": 200,
-    "timeWeek": 200,
-    "timeMonth": 200,
-    "timeYear": 200,
+    "time": 231,
+    "timeDay": 231,
+    "timeWeek": 231,
+    "timeMonth": 231,
+    "timeYear": 231,
     "dailyMinutesDown": {}
   },
   {
-    "name": "INSIGHT API",
+    "name": "API",
     "url": "https://app.opsginsight.com/health",
     "icon": "https://icons.duckduckgo.com/ip3/app.opsginsight.com.ico",
     "slug": "insight-api",
@@ -28,15 +28,15 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 201,
-    "timeDay": 201,
-    "timeWeek": 201,
-    "timeMonth": 201,
-    "timeYear": 201,
+    "time": 202,
+    "timeDay": 202,
+    "timeWeek": 202,
+    "timeMonth": 202,
+    "timeYear": 202,
     "dailyMinutesDown": {}
   },
   {
-    "name": "INSIGHT API dependencies (readiness)",
+    "name": "Data and backing services",
     "url": "https://app.opsginsight.com/health/ready",
     "icon": "https://icons.duckduckgo.com/ip3/app.opsginsight.com.ico",
     "slug": "insight-api-dependencies-readiness",
@@ -46,11 +46,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 283,
-    "timeDay": 283,
-    "timeWeek": 283,
-    "timeMonth": 283,
-    "timeYear": 283,
+    "time": 290,
+    "timeDay": 290,
+    "timeWeek": 290,
+    "timeMonth": 290,
+    "timeYear": 290,
     "dailyMinutesDown": {}
   }
 ]
