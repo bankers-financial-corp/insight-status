@@ -1,31 +1,26 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# .upptimerc.yml for bankers-financial-corp/insight-status (#5975, CDS-CSO-AVR)
+owner: bankers-financial-corp
+repo: insight-status
+user-agent: insight-status-upptime
 
+# All three URLs are already public and unauthenticated; each returns a bare
+# "ok"/"Healthy" text body with no dependency detail.
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: INSIGHT web application
+    url: https://app.opsginsight.com/healthz
+    expectedStatusCodes: [200]
+  - name: INSIGHT API
+    url: https://app.opsginsight.com/health
+    expectedStatusCodes: [200]
+  - name: INSIGHT API dependencies (readiness)
+    url: https://app.opsginsight.com/health/ready
+    expectedStatusCodes: [200]
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+  name: INSIGHT Operations Platform Status
+  introTitle: "INSIGHT Operations Platform — service status"
+  introMessage: Current and historical availability of INSIGHT core services. This page is hosted independently of the INSIGHT platform.
+  # Custom domain: partner agencies that allowlist only *.opsginsight.com can
+  # reach it. Requires the DNS CNAME in the operator steps.
+  # cname: status.opsginsight.com   # enable once the DNS CNAME exists
+  baseUrl: /insight-status
