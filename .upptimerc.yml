@@ -5,21 +5,45 @@ user-agent: insight-status-upptime
 
 # All three URLs are already public and unauthenticated; each returns a bare
 # "ok"/"Healthy" text body with no dependency detail.
+# Slugs are pinned so renaming a service never orphans its history file.
 sites:
-  - name: INSIGHT web application
+  - name: Web application
+    slug: insight-web-application
     url: https://app.opsginsight.com/healthz
     expectedStatusCodes: [200]
-  - name: INSIGHT API
+  - name: API
+    slug: insight-api
     url: https://app.opsginsight.com/health
     expectedStatusCodes: [200]
-  - name: INSIGHT API dependencies (readiness)
+  - name: Data and backing services
+    slug: insight-api-dependencies-readiness
     url: https://app.opsginsight.com/health/ready
     expectedStatusCodes: [200]
 
 status-website:
-  name: INSIGHT Operations Platform Status
-  introTitle: "INSIGHT Operations Platform — service status"
-  introMessage: Current and historical availability of INSIGHT core services. This page is hosted independently of the INSIGHT platform.
-  # Custom domain: partner agencies that allowlist only *.opsginsight.com can
-  # reach it. Requires the DNS CNAME in the operator steps.
+  name: INSIGHT Status
   cname: status.opsginsight.com
+  theme: light
+  logoUrl: https://status.opsginsight.com/insight-logo.png
+  favicon: https://status.opsginsight.com/insight-logo.png
+  introTitle: "INSIGHT Operations Platform"
+  introMessage: Current and historical availability of INSIGHT core services. This page is hosted independently of the INSIGHT platform.
+  navbar:
+    - title: Status
+      href: /
+    - title: Open INSIGHT
+      href: https://app.opsginsight.com
+  css: >-
+    :root{--body-background-color:#fff;--body-text-color:#1f2933;--card-border-color:#e3e8ee;--nav-border-bottom-color:#e3e8ee;--nav-current-border-bottom-color:#2f6fed;--up-border-left-color:#2fb344;--tag-up-background-color:#2fb344;--graph-opacity:.35}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+    nav img{height:2.25rem;width:auto}
+    main header h1{font-weight:600;letter-spacing:-.01em}
+    main header .lead{color:#5b6875}
+    main>article.up{background:#2fb344;color:#fff;border:0;border-radius:6px;padding:1.1rem 1.25rem;font-size:1.15rem;font-weight:600}
+    main>article.degraded{background:#f59f00;color:#fff;border:0;border-radius:6px;padding:1.1rem 1.25rem;font-size:1.15rem;font-weight:600}
+    main>article.down{background:#d63939;color:#fff;border:0;border-radius:6px;padding:1.1rem 1.25rem;font-size:1.15rem;font-weight:600}
+    .live-status article{border-radius:6px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+    footer{color:#8a94a0;font-size:.875rem}
+
+i18n:
+  footer: "[Machine-readable status (JSON)](https://raw.githubusercontent.com/bankers-financial-corp/insight-status/master/history/summary.json) · [Source]($REPO) · Powered by [Upptime](https://upptime.js.org)"
