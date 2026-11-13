@@ -4,20 +4,20 @@
     "url": "https://app.opsginsight.com/healthz",
     "icon": "https://icons.duckduckgo.com/ip3/app.opsginsight.com.ico",
     "slug": "insight-web-application",
-    "status": "down",
-    "uptime": "99.66%",
-    "uptimeDay": "99.40%",
-    "uptimeWeek": "99.66%",
-    "uptimeMonth": "99.66%",
-    "uptimeYear": "99.66%",
-    "time": 201,
-    "timeDay": 205,
-    "timeWeek": 201,
-    "timeMonth": 201,
-    "timeYear": 201,
+    "status": "up",
+    "uptime": "99.38%",
+    "uptimeDay": "98.90%",
+    "uptimeWeek": "99.38%",
+    "uptimeMonth": "99.38%",
+    "uptimeYear": "99.38%",
+    "time": 203,
+    "timeDay": 208,
+    "timeWeek": 203,
+    "timeMonth": 203,
+    "timeYear": 203,
     "dailyMinutesDown": {
       "2026-11-12": 8,
-      "2026-11-13": 1
+      "2026-11-13": 8
     }
   },
   {
@@ -25,20 +25,20 @@
     "url": "https://app.opsginsight.com/health",
     "icon": "https://icons.duckduckgo.com/ip3/app.opsginsight.com.ico",
     "slug": "insight-api",
-    "status": "down",
-    "uptime": "99.68%",
-    "uptimeDay": "99.43%",
-    "uptimeWeek": "99.68%",
-    "uptimeMonth": "99.68%",
-    "uptimeYear": "99.68%",
+    "status": "up",
+    "uptime": "99.40%",
+    "uptimeDay": "98.93%",
+    "uptimeWeek": "99.40%",
+    "uptimeMonth": "99.40%",
+    "uptimeYear": "99.40%",
     "time": 146,
-    "timeDay": 111,
+    "timeDay": 119,
     "timeWeek": 146,
     "timeMonth": 146,
     "timeYear": 146,
     "dailyMinutesDown": {
       "2026-11-12": 8,
-      "2026-11-13": 0
+      "2026-11-13": 8
     }
   },
   {
@@ -46,20 +46,20 @@
     "url": "https://app.opsginsight.com/health/ready",
     "icon": "https://icons.duckduckgo.com/ip3/app.opsginsight.com.ico",
     "slug": "insight-api-dependencies-readiness",
-    "status": "down",
-    "uptime": "99.70%",
-    "uptimeDay": "99.46%",
-    "uptimeWeek": "99.70%",
-    "uptimeMonth": "99.70%",
-    "uptimeYear": "99.70%",
-    "time": 210,
-    "timeDay": 172,
-    "timeWeek": 210,
-    "timeMonth": 210,
-    "timeYear": 210,
+    "status": "up",
+    "uptime": "99.42%",
+    "uptimeDay": "98.95%",
+    "uptimeWeek": "99.42%",
+    "uptimeMonth": "99.42%",
+    "uptimeYear": "99.42%",
+    "time": 216,
+    "timeDay": 191,
+    "timeWeek": 216,
+    "timeMonth": 216,
+    "timeYear": 216,
     "dailyMinutesDown": {
       "2026-11-12": 8,
-      "2026-11-13": 0
+      "2026-11-13": 7
     }
   }
 ]
